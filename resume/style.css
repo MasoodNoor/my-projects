@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Raleway;
+  src: url(Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: Raleway;
+  font-size: 18px;
+  padding: 30px;
+  background-color: white;
+  color: #464a4e;
+}
+.header {
+  background-color: #f4f4f4;
+  height: 300px;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.mainheading {
+  font-weight: 500;
+  font-size: 4em;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+.subheading {
+  font-weight: 400;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+.imagewithframe {
+  background-color: white;
+  background-image: url(profile_pic.png);
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  right: 80px;
+  top: 100px;
+  border-radius: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  z-index: 1;
+}
+
+.objective {
+  margin: 40px;
+  padding-left: 50px;
+}
+.obj_text {
+  width: 80%;
+  margin: 10px;
+  padding-left: 40px;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.4;
+}
+.contact_education {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px;
+}
+.contact {
+  margin-top: 20px;
+  padding-left: 60px;
+}
+.contact p {
+  padding-left: 55px;
+  margin: 7px;
+}
+.education {
+  margin-top: 20px;
+}
+.education p {
+  padding-left: 55px;
+  margin: 7px;
+}
+.experience {
+  margin: 40px;
+  padding-left: 55px;
+}
+
+.experience p {
+  padding-left: 40px;
+  margin: 7px;
+}
+
+.experience li {
+  padding-left: 10px;
+}
+
+.skills,
+.publication {
+  margin: 40px;
+  padding-left: 55px;
+}
+
+.skills li,
+.publication li {
+  padding-left: 10px;
+  margin: 5px;
+}
+
+hr {
+  border: 1.5px solid #464a4e;
+}
+.button-pos{
+display: flex;
+justify-content: end;
+}
+button{
+    color: #464a4e;
+   
+    
+    
+}
+/* media quries */
+@media (max-width: 1200px) {
+  /* Reduce font size for large tablets and small desktops */
+  .mainheading {
+    font-size: 3em;
+    letter-spacing: 0.3em;
+  }
+
+  .heading,
+  .subheading {
+    font-size: 2em;
+    letter-spacing: 0.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stacked layout for mobile and smaller tablets */
+  body {
+    padding: 10px;
+  }
+  .imagewithframe {
+    display: none;
+  }
+  .header {
+    padding: 30px;
+    height: auto;
+    gap: 0.5em;
+  }
+
+  .mainheading {
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+  }
+
+  .subheading,
+  .heading {
+    font-size: 1.5em;
+  }
+
+  .imagewithframe {
+    height: 200px;
+    width: 200px;
+    right: 20px;
+    top: 20px;
+  }
+
+  .objective,
+  .contact,
+  .education,
+  .experience,
+  .skills,
+  .publication {
+    margin: 20px;
+    padding-left: 20px;
+  }
+
+  .contact_education {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .obj_text {
+    width: 100%;
+    padding-left: 20px;
+    font-size: 16px;
+  }
+
+  .contact p,
+  .education p,
+  .experience p {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  /* Further reduce font size for smaller mobile screens */
+  .mainheading {
+    font-size: 2em;
+    letter-spacing: 0.15em;
+  }
+  .imagewithframe {
+    display: none;
+  }
+
+  .subheading,
+  .heading {
+    font-size: 1.2em;
+  }
+
+  .imagewithframe {
+    height: 150px;
+    width: 150px;
+    right: 10px;
+    top: 10px;
+  }
+
+  .objective,
+  .contact,
+  .education,
+  .experience,
+  .skills,
+  .publication {
+    margin: 10px;
+    padding-left: 10px;
+  }
+
+  .obj_text,
+  .contact p,
+  .education p,
+  .experience p {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+}

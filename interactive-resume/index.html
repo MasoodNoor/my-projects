@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Input Form Section -->
+      <div class="form-container">
+        <h2>Build Your Resume</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+
+        <label for="jobtitle">Job Title:</label>
+        <input type="text" id="jobtitle" placeholder="Enter your job title" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email address" />
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" placeholder="Enter your address" />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" />
+
+        <!-- Education Section -->
+        <div id="education-section">
+          <label for="education">Education:</label>
+          <button class="field-button" onclick="addEducation()">+</button>
+          <button class="field-button" onclick="remEducation()">-</button>
+          <input
+            type="text"
+            id="education-input"
+            class="education-field"
+            placeholder="Enter your education"
+          />
+          <div id="education-list"></div>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills-section">
+          <label for="skills">Skills:</label>
+          <button class="field-button" onclick="addSkills()">+</button>
+          <button class="field-button" onclick="remSkills()">-</button>
+          <input
+            type="text"
+            id="skills-input"
+            class="skills-field"
+            placeholder="Enter your skills"
+          />
+          <div id="skills-list"></div>
+        </div>
+
+        <!-- Experience Section -->
+        <div id="experience-section">
+          <label for="experience">Experience:</label>
+          <button class="field-button" onclick="addExperience()">+</button>
+          <button class="field-button" onclick="remExperience()">-</button>
+          <input
+            type="text"
+            id="experience-input"
+            class="experience-field"
+            placeholder="Enter your work experience"
+          />
+          <div id="experience-list"></div>
+        </div>
+
+        <button onclick="generateResume()">Generate Resume</button>
+      </div>
+
+      <!-- Resume Preview Section -->
+      <div class="resume-container">
+        <div id="resume-preview" class="resume-content">
+          <!-- Content populated when user submits form -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

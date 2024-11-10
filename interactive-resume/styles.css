@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Font setup */
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "Raleway", form-container;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  gap: 20px;
+
+}
+
+.form-container {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.form-container label {
+  font-weight: 500;
+}
+
+.field-button {
+  padding: 3px;
+}
+.resume-container {
+  width: 70%;
+  
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 95%;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Resume Content Styling */
+.resume-content {
+  font-family: "Raleway", sans-serif;
+  color: #464a4e;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+.resume-content .header {
+  background-color: #f4f4f4;
+  height: 200px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.resume-content h1 {
+  font-weight: 600;
+  font-size: 3em;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.resume-content h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.resume-content p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.resume-content h3 {
+  font-size: 1.5em;
+  color: #464a4e;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+.resume-content ul,
+.resume-content ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resume-content ul li,
+.resume-content ol li {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form-container,
+  .resume-container {
+    width: 100%;
+  }
+
+  .form-container {
+    margin-bottom: 20px;
+  }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+  .form-container {
+    width: 45%;
+  }
+
+  .resume-container {
+    width: 100%;
+  }
+
+  .field-button {
+    padding: 5px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    width: 100%;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .form-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .resume-container {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .resume-content h1 {
+    font-size: 2em;
+  }
+
+  .resume-content h2 {
+    font-size: 1.5em;
+  }
+
+  .resume-content h3 {
+    font-size: 1.2em;
+  }
+
+  .resume-content ul li,
+  .resume-content ol li {
+    font-size: 0.9em;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .container {
+    gap: 10px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .resume-content h1 {
+    font-size: 1.8em;
+  }
+
+  .resume-content h2 {
+    font-size: 1.3em;
+  }
+
+  .resume-content h3 {
+    font-size: 1.1em;
+  }
+
+  .resume-content ul li,
+  .resume-content ol li {
+    font-size: 0.85em;
+  }
+
+  button {
+    padding: 8px 12px;
+  }
+}
