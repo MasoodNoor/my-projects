@@ -1,16 +1,16 @@
 import Header from "@/components/header";
 import Heading from "@/components/heading";
-import Main from "@/components/main";
+import About from "@/components/about";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
     <div>
-      <Header />
-      <div className="">
-      <Main />
-      <Heading />
+      <div className="flex-col">
+        <Heading />
+        <About />
+        <Contact />
       </div>
-      
     </div>
   );
 }
