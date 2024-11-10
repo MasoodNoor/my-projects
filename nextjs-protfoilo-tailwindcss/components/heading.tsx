@@ -10,7 +10,7 @@ export default function Heading() {
   <div className="w-full lg:w-1/2 flex justify-center lg:justify-end -2">
     <Image
       className="rounded-lg"
-      src={require('../app/imgs/profile_pic.png')}
+      src= "/images/profile_pic.png"
       width={500}  // Adjust as needed for responsiveness
       height={500} // Adjust as needed for responsiveness
       alt="Picture of the author"

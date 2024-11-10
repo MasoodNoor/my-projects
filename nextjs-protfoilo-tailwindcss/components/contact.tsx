@@ -9,8 +9,8 @@ function Contact() {
             Contact Us
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Got a question or an idea? I’m just a message away from helping you
-            simplify and supercharge your workflow. Reach out now, and let’s
+            Got a question or an idea? I&#39;m just a message away from helping you
+            simplify and supercharge your workflow. Reach out now, and let&#39;s
             make things happen!
           </p>
         </div>
