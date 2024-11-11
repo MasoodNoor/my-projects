@@ -47,6 +47,8 @@ export default function About() {
             <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
               <div className="h-full text-center">
                 <Image
+                  width={500}
+                  height={500}
                   alt="testimonial"
                   className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
                   src="https://static.wixstatic.com/media/1e94d3_f0226f7459c64cbe92ae6f4f9e2363af~mv2.jpeg/v1/fill/w_407,h_447,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1e94d3_f0226f7459c64cbe92ae6f4f9e2363af~mv2.jpeg"
@@ -68,6 +70,8 @@ export default function About() {
             <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
               <div className="h-full text-center">
                 <Image
+                  width={500}
+                  height={500}
                   alt="testimonial"
                   className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
                   src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/0b790f01864bc4dc664c8b6ee7325a79-1706911246474/a01dc6aa-b973-474f-8dfe-3c42bd2ef7e9.png"
@@ -87,6 +91,8 @@ export default function About() {
             <div className="lg:w-1/3 lg:mb-0 p-4">
               <div className="h-full text-center">
                 <Image
+                  width={500}
+                  height={500}
                   alt="testimonial"
                   className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
                   src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/3976d15b4a0d0fdaee9bc3e6d89a11aa-1725961140543/79b1723c-4bed-4ff1-a676-fed1b7d265eb.JPEG"
