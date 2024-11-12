@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div>
       <section id="about" className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 py-28 mx-auto">
           <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
             <blockquote className="text-xl italic font-semibold text-gray-600">
               <svg
@@ -22,7 +22,7 @@ export default function About() {
               </p>
             </blockquote>
             <br />
-            <p className="leading-relaxed text-lg">
+            <p className="leading-relaxed text-xl">
               I am Masood Noor, an automation expert and Fiverr freelancer
               dedicated to creating seamless, efficient workflows for my
               clients. I specialize in customizing integrations that streamline
@@ -32,16 +32,19 @@ export default function About() {
               to take your operations to the next level? Lets connect on Fiverr
               and explore how I can help make your systems work better for you.
             </p>
-            <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6" />
-            <h1 className="text-gray-900 font-medium title-font tracking-wider text-md">
-              What Clients Say:
-            </h1>
           </div>
         </div>
       </section>
 
       <section id="testimonials" className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        
+        <div className="container px-5 py-20 mx-auto">
+        <div className="text-center">
+          <h1 className="text-gray-900 font-medium title-font tracking-wider text-md">
+            What Clients Say:
+          </h1>
+          <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6" />
+        </div>
           <div className="flex flex-wrap -m-4">
             <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
               <div className="h-full text-center">
