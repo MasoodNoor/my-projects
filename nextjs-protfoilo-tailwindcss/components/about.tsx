@@ -18,8 +18,8 @@ export default function About() {
                 <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
               </svg>
               <p>
-              &quot;Efficiency is the soul of productivity, and I am here to help
-                you achieve it.&quot;
+                &quot;Efficiency is the soul of productivity, and I am here to
+                help you achieve it.&quot;
               </p>
             </blockquote>
             <br />
@@ -34,9 +34,9 @@ export default function About() {
               and explore how I can help make your systems work better for you.
             </p>
             <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6" />
-            <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
+            <h1 className="text-gray-900 font-medium title-font tracking-wider text-md">
               What Clients Say:
-            </h2>
+            </h1>
           </div>
         </div>
       </section>
