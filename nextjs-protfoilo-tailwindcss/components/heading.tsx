@@ -11,7 +11,7 @@ export default function Heading() {
         {/* Image Section */}
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end -2">
           <Image
-            src="/pic.png"
+            src="/public/pic.png"
             width={500} // Adjust as needed for responsiveness
             height={500} // Adjust as needed for responsiveness
             alt="Picture of the Masood"
