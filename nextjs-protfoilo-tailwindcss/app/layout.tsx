@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import { Roboto, Raleway } from "next/font/google";
 
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+export const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ['100', '300', '400', '700', '900'],
+  display: 'swap',
+  variable: '--font-raleway'
 });
 
 export const metadata: Metadata = {
@@ -27,13 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}
+        className={`${roboto.className}, ${raleway.className}
       `}
       >
-        
-
         {children}
-        
       </body>
     </html>
   );

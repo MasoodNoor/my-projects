@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { raleway } from "./components/heading";
 
 export default {
   content: [
@@ -8,11 +9,13 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        raleway: ["Raleway", "sans-serif"],
+      },
+
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        
-        
       },
     },
   },
