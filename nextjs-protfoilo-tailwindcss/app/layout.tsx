@@ -8,7 +8,7 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-export const raleway = Raleway({
+const raleway = Raleway({
   subsets: ["latin"],
   weight: ['100', '300', '400', '700', '900'],
   display: 'swap',
