@@ -1,16 +1,14 @@
-import Header from "@/components/header";
 import Heading from "@/components/heading";
-import Main from "@/components/main";
 
 export default function Home() {
   return (
     <div>
-      <Header />
-      <div className="">
-      <Main />
-      <Heading />
+      <div className="flex flex-col flex-wrap">
+        <div>
+        <Heading />
+        </div>
+        
       </div>
-      
     </div>
   );
 }
