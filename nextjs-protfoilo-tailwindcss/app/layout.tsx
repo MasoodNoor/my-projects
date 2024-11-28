@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Roboto, Raleway } from "next/font/google";
-
-
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-});
+import { Raleway } from "next/font/google";
 
 const raleway = Raleway({
   subsets: ["latin"],
-  weight: ['100', '300', '400', '700', '900'],
-  display: 'swap',
-  variable: '--font-raleway'
+  weight: ["100", "300", "400", "700", "900"],
+  display: "swap",
+  variable: "--font-raleway",
 });
 
 export const metadata: Metadata = {
@@ -27,12 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={`${roboto.className}, ${raleway.className}
-      `}
-      >
-        {children}
-      </body>
+      <body className={raleway.className}>{children}</body>
     </html>
   );
 }
