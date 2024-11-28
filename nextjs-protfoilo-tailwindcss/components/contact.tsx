@@ -2,13 +2,13 @@ import Link from "next/link";
 
 function Contact() {
   return (
-    <section id="contact" className="text-gray-600 body-font relative">
+    <section id="contact" className="text-gray-600 body-font relative bg-gray-900">
       <div className="container px-5 py-20 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
             Contact Us
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-white">
             Got a question or an idea? I&#39;m just a message away from helping
             you simplify and supercharge your workflow. Reach out now, and
             let&#39;s make things happen!
@@ -20,7 +20,7 @@ function Contact() {
               <div className="relative">
                 <label
                   htmlFor="name"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-7 text-sm text-white"
                 >
                   Name
                 </label>
@@ -28,7 +28,7 @@ function Contact() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-white bg-opacity-90 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
@@ -36,7 +36,7 @@ function Contact() {
               <div className="relative">
                 <label
                   htmlFor="email"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-7 text-sm text-white"
                 >
                   Email
                 </label>
@@ -44,7 +44,7 @@ function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-white bg-opacity-90 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
@@ -52,14 +52,14 @@ function Contact() {
               <div className="relative">
                 <label
                   htmlFor="message"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-7 text-sm text-white"
                 >
                   Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
-                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-white bg-opacity-90 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   defaultValue={""}
                 />
               </div>
@@ -71,10 +71,10 @@ function Contact() {
               <div className="p-2 w-full pt-2 mt-2 border-b border-gray-200 text-center">
                 <Link
                   href="mailto:themasoodnoor100@gmail.com"
-                  className="text-indigo-600 dark:text-indigo-300 hover:text-indigo-800 transition-colors duration-300 underline decoration-indigo-500 decoration-2 font-semibold flex items-center justify-center space-x-2"
+                  className="text-indigo-600  hover:text-indigo-800 transition-colors duration-300 underline decoration-indigo-500 decoration-2 font-semibold flex items-center justify-center space-x-2"
                 >
                   <svg
-                    className="w-6 h-6 text-gray-800 dark:text-gray-500"
+                    className="w-6 h-6 text-white "
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -88,12 +88,12 @@ function Contact() {
                   <span>themasoodnoor100@gmail.com</span>
                 </Link>
                 <p className="leading-normal my-2 flex flex-col items-center space-x-1">
-                  <span className="text-xl font-semibold">Fiverr</span>
+                  <span className="text-xl font-semibold text-white">Fiverr</span>
                 </p>
 
                 <p className="leading-normal my-2 flex justify-center items-center space-x-1">
                   <svg
-                    className="w-6 h-6 text-gray-800 dark:text-gray-500"
+                    className="w-6 h-6 text-white"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -105,7 +105,7 @@ function Contact() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-xl font-semibold">
+                  <span className="text-xl font-semibold text-white">
                     Karachi, Pakistan
                   </span>
                 </p>

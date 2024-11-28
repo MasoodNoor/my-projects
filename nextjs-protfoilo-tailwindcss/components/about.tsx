@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div>
-      <section id="about" className="text-gray-600 body-font">
-        <div className="container px-5 py-28 mx-auto">
-          <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-            <blockquote className="text-xl italic font-semibold text-gray-600">
+    <div id="about" >
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-28 mx-auto md:max-w-full">
+          <div className="w-full lg:w-3/4 xl:w-1/2 mx-auto text-xs sm:text-justify pb-5 border-b-2 border-black">
+            <blockquote className="text-xl md:text-2xl italic font-semibold text-gray-600">
               <svg
-                className="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4"
+                className="w-8 h-8 text-gray-700  mb-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -22,7 +22,7 @@ export default function About() {
               </p>
             </blockquote>
             <br />
-            <p className="leading-relaxed text-xl">
+            <p className="leading-relaxed text-lg sm:text-xl md:text-2xl">
               I am Masood Noor, an automation expert and Fiverr freelancer
               dedicated to creating seamless, efficient workflows for my
               clients. I specialize in customizing integrations that streamline
