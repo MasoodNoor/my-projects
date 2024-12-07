@@ -9,15 +9,14 @@ export default function Home() {
     <div>
       <div className="flex flex-col flex-wrap">
         <div>
-        <Header />
+          <Header />
         </div>
         <div>
-        <Heading />
-        <About />
-        <Contact />
-        <Footer />
+          <Heading />
+          <About />
+          <Contact />
+          <Footer />
         </div>
-        
       </div>
     </div>
   );
