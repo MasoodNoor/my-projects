@@ -28,7 +28,7 @@ function PopularCar() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-x-1">
+        <div className="grid grid-cols-4 gap-x-4">
           <CarCard />
           <CarCards2 />
           <CarCard />

@@ -1,6 +1,11 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import CarCard from "./carCards";
 import CarCards2 from "./carCards2";
+import CarCards3 from "./carCards3";
+import CarCards4 from "./carCards4";
+import CarCard5 from "./carCards5";
+import CarCards6 from "./carCards6";
+import CarCards7 from "./carCards7";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -27,14 +32,15 @@ function RecommendationCar() {
             </p>
           </div> */}
         </div>
-        <div className="grid grid-cols-4 gap-x-1">
+        <div className="grid grid-cols-4 gap-x-2 gap-y-6">
           <CarCard />
           <CarCards2 />
-          <CarCard />
-          <CarCards2 />
-
-          <CarCard />
-          <CarCards2 />
+          <CarCards3 />
+          <CarCards4 />
+          <CarCard5 />
+          <CarCards6 />
+          <CarCards7 />
+          <CarCards3 />
         </div>
       </div>
     </main>

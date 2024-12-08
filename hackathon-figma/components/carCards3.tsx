@@ -5,7 +5,7 @@ const CarCards3 = () => {
     <div className="bg-white rounded-lg w-[304px] h-[388px] p-[24px]">
       <div className=" flex justify-between items-center">
         <h3 className="text-xl font-bold leading-[30px] font-plusJakarta">
-          Koenigsegg
+          Rolls - Royce
         </h3>
         <svg
           width="24"
@@ -22,21 +22,21 @@ const CarCards3 = () => {
       </div>
       <div className="">
         <h3 className="text-[14px] font-bold leading-[30px] text-[#90A3BF] font-plusJakarta">
-          Sport
+          Sedan
         </h3>
       </div>
       <div>
         <Image
-          className="pt-2 ml-8 "
-          src="/car-images/carimg-2.png"
+          className="pt-16 mb-6 ml-8 "
+          src="/car-images/carimg-3.png"
           alt="Koenigsegg Sport"
           width={204}
-          height={150}
+          height={100}
         />
         <div className="shadow-box"></div>
       </div>
 
-      <div className="w-[256px] h-[24px] pt-[30px] flex items-center justify-between">
+      <div className="w-[256px] h-[24px] pt-[40px] flex items-center justify-between">
         <div className="w-[58px] h-[24px] flex justify-center items-center gap-1">
           <svg
             width="24"
@@ -51,7 +51,7 @@ const CarCards3 = () => {
             />
           </svg>
           <div className="w-[28px] h-[24] font-medium text-[14px] leading-[21px] text-[#90A3BF] font-plusJakarta">
-            90L
+            70L
           </div>
         </div>
         <div className="w-[76px] h-[24px] flex justify-center items-center gap-1">
@@ -108,13 +108,13 @@ const CarCards3 = () => {
           </svg>
 
           <div className="w-[60px] h-[24] font-medium text-[14px] leading-[21px] text-[#90A3BF] font-plusJakarta">
-            2 People
+            4 People
           </div>
         </div>
       </div>
       <div className="w-[116px] h-[44px] pt-[70px] flex justify-between items-center gap-8 ">
         <div className="font-bold text-[20px] font-plusJakarta">
-          $99.00/
+          $96.00/
           <span className="font-bold text-[14px] font-plusJakarta text-[#90A3BF]">
             day
           </span>

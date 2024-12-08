@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-const CarCards2 = () => {
+const CarCards6 = () => {
   return (
-    <div className="bg-white rounded-lg w-[304px] h-[388px] p-[24px]">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden w-[304px] h-[388px] p-[24px]">
       <div className=" flex justify-between items-center">
         <h3 className="text-xl font-bold leading-[30px] font-plusJakarta">
-          Nissan GT - R
+          All New Terios
         </h3>
         <svg
           width="24"
@@ -16,27 +16,27 @@ const CarCards2 = () => {
         >
           <path
             d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
-            fill="none"
+            fill="#ED3F3F"
           />
         </svg>
       </div>
       <div className="">
         <h3 className="text-[14px] font-bold leading-[30px] text-[#90A3BF] font-plusJakarta">
-          Sport
+          SUV
         </h3>
       </div>
       <div>
         <Image
-          className="pt-2 ml-8 "
-          src="/car-images/carimg-2.png"
+          className="py-4"
+          src="/car-images/carimg-6.png"
           alt="Koenigsegg Sport"
-          width={204}
-          height={150}
+          width={304}
+          height={213}
         />
         <div className="shadow-box"></div>
       </div>
 
-      <div className="w-[256px] h-[24px] pt-[30px] flex items-center justify-between">
+      <div className="w-[256px] h-[24px] pt-[50px] flex items-center justify-between">
         <div className="w-[58px] h-[24px] flex justify-center items-center gap-1">
           <svg
             width="24"
@@ -51,7 +51,7 @@ const CarCards2 = () => {
             />
           </svg>
           <div className="w-[28px] h-[24] font-medium text-[14px] leading-[21px] text-[#90A3BF] font-plusJakarta">
-            80L
+            90L
           </div>
         </div>
         <div className="w-[76px] h-[24px] flex justify-center items-center gap-1">
@@ -108,29 +108,25 @@ const CarCards2 = () => {
           </svg>
 
           <div className="w-[60px] h-[24] font-medium text-[14px] leading-[21px] text-[#90A3BF] font-plusJakarta">
-            2 People
+            6 People
           </div>
         </div>
       </div>
       <div className="w-[116px] h-[44px] pt-[70px] flex justify-between items-center gap-8 ">
         <div className="font-bold text-[20px] font-plusJakarta">
-          $80.00/
+          $74.00/
           <span className="font-bold text-[14px] font-plusJakarta text-[#90A3BF]">
             day
           </span>
         </div>
-
         <div>
           <Button className="w-[116px] h-[44px] px-[20px] rounded-[4px] bg-[#3563E9] text-white font-plusJakarta text-[16px] leading-[24px] text-center">
             Rent Now
           </Button>
         </div>
       </div>
-      <p className="font-bold text-[14px] line-through font-plusJakarta text-[#90A3BF] mt-3 ">
-        $100.00
-      </p>
     </div>
   );
 };
 
-export default CarCards2;
+export default CarCards6;
