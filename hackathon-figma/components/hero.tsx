@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import Pickswitchdrop from "./pickswitchdrop";
 import PopularCar from "./popularCar";
-import RecommendationCar from "./recommendationcar";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -73,7 +72,6 @@ function Hero() {
       </div>
       <Pickswitchdrop />
       <PopularCar />
-      
     </main>
   );
 }

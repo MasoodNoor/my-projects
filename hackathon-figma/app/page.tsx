@@ -1,5 +1,5 @@
 
-import Image from "next/image";
+
 import { Plus_Jakarta_Sans } from "next/font/google";
 import Hero from "@/components/hero";
 

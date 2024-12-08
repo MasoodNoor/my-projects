@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import CarCard from "./carCards";
 import CarCards2 from "./carCards2";
@@ -37,7 +36,6 @@ function PopularCar() {
         </div>
       </div>
       <RecommendationCar />
-      
     </main>
   );
 }
