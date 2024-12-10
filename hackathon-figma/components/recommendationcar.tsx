@@ -24,15 +24,15 @@ function RecommendationCar() {
           <CarCard />
           <CarCards3 />
         </div>
-        <div className="sm:w-[100%] sm:h-[44px] flex items-center justify-between pt-8 py-10 sm:py-20">
+        <div className="sm:w-[100%] sm:h-[44px] flex items-center justify-between pt-8 py-10 sm:py-20 px-4">
           <div></div>
-          <Button className=" sm:w-[156px] sm:h-[44px] bg-[#3563E9] `sm:px-[20px] sm:rounded-[4px] inline-flex items-center justify-center ">
+          <Button className=" sm:w-[156px] sm:h-[44px] bg-[#3563E9] px-[20px] sm:rounded-[4px] inline-flex items-center justify-center ">
             <p className="inline-flex items-center justify-center sm:w-[116px] sm:h-[24px] text-[#FFFFFF] font-plusJakarta font-semibold text-[14px] sm:text-[16px] leading-4 text-center">
               Show more car
             </p>
           </Button>
-          <div className="sm:w-[140px] sm:h-[24px] inline-flex justify-end items-end">
-            <p className="font-plusJakarta font-medium text-[14px] text-[#90A3BF]">
+          <div className="sm:h-[24px] flex justify-start items-center">
+            <p className="font-plusJakarta font-medium text-[14px] text-[#90A3BF] ">
               120 cars
             </p>
           </div>
