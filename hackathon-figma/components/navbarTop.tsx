@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function NavbarTop() {
   return (
-    <div className="w-[375px] h-[288px] sm:h-[124px]   sm:w-full  border-t border-[#C3D4E966] bg-white   sm:flex   sm:items-center   sm:justify-between   sm:px-[60px]  ">
+    <div className="w-full h-[288px] sm:h-[124px] border-t border-[#C3D4E966] bg-white   sm:flex   sm:items-center   sm:justify-between   sm:px-[60px]  ">
       {/* logo and search  for mobile*/}
       <div className="sm:flex sm:items-center sm:gap-[64px]">
         <div className="w-[327px] h-[28px] py-[32px] px-[25px] flex justify-between items-center gap-[191px] sm:hidden">

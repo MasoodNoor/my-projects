@@ -1,7 +1,8 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import CarCard from "./carCards";
 import CarCards2 from "./carCards2";
-import RecommendationCar from "./recommendationcar";
+import CarCards3 from "./carCards3";
+import CarCards4 from "./carCards4";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -10,12 +11,12 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 function PopularCar() {
   return (
-    <main className="h-[1356px]">
-      <div className="h-[452px]">
+    <main className="w-[327px] h-[286px] sm:w-full sm:h-[452px]">
+      <div className="">
         <div className="flex justify-between items-center">
-          <div className="h-[44px] w-[132px] inline-flex justify-center items-center ">
+          <div className="w-[327px] h-[20px] sm:h-[44px] sm:w-[132px]">
             <p
-              className={`${plusJakartaSans.className}  h-[24px]  text-[16px] font-medium leading-[20px] tracking-[-0.03em] text-left text-[#90A3BF]`}
+              className={`${plusJakartaSans.className}  h-[24px]  text-[16px] font-medium leading-[20px] tracking-[-0.03em] text-left text-[#90A3BF] py-2`}
             >
               Popular Car
             </p>
@@ -28,14 +29,17 @@ function PopularCar() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-x-4">
+        <div className="flex justify-center items-center sm:hidden overflow-hidden">
+          <CarCard />
+        </div>
+
+        <div className="sm:grid sm:grid-cols-4 sm:gap-x-7  hidden">
           <CarCard />
           <CarCards2 />
-          <CarCard />
-          <CarCards2 />
+          <CarCards3 />
+          <CarCards4 />
         </div>
       </div>
-      <RecommendationCar />
     </main>
   );
 }

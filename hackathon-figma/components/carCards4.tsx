@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-const CarCards4 = () => {
+const CarCard4 = () => {
   return (
-    <div className="bg-white rounded-lg w-[304px] h-[388px] p-[24px]">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden w-[240px] h-[286px] sm:w-[304px] sm:h-[388px] p-[2px] sm:p-[24px]">
       <div className=" flex justify-between items-center">
         <h3 className="text-xl font-bold leading-[30px] font-plusJakarta">
-         All New Rush
+        MG ZX Exclusice
         </h3>
         <svg
           width="24"
@@ -16,28 +16,28 @@ const CarCards4 = () => {
         >
           <path
             d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
-            fill="none"
+            fill="#ED3F3F"
           />
         </svg>
       </div>
       <div className="">
         <h3 className="text-[14px] font-bold leading-[30px] text-[#90A3BF] font-plusJakarta">
-          SUV
+        Hatchback
         </h3>
       </div>
       <div>
         <Image
-          className="pt-12 "
-          src="/car-images/carimg-4.png"
-          alt="Koenigsegg Sport"
-          width={300}
-          height={150}
+          className="pt-4 sm:pt-10 pb-4"
+          src="/car-images/carimg-5.png"
+          alt="MG ZX Exclusice"
+          width={204}
+          height={213}
         />
         <div className="shadow-box"></div>
       </div>
 
-      <div className="w-[256px] h-[24px] pt-[30px] flex items-center justify-between">
-        <div className="w-[58px] h-[24px] flex justify-center items-center gap-1">
+      <div className="w-[204px] h-[14px]  sm:w-[256px] sm:h-[24px] pt-[25px] pb-[8px] sm:pt-[40px] flex items-center justify-evenly gap-3 px-5">
+        <div className="w-[42px] h-[14px] sm:w-[58px] sm:h-[24px] flex justify-between items-center gap-1">
           <svg
             width="24"
             height="24"
@@ -50,11 +50,11 @@ const CarCards4 = () => {
               fill="#90A3BF"
             />
           </svg>
-          <div className="w-[28px] h-[24] font-medium text-[14px] leading-[21px] text-[#90A3BF] font-plusJakarta">
+          <div className="w-[24px] h-[14px] sm:w-[28px] sm:h-[24] font-medium text-[12px] sm:text-[14px] leading-[15px] sm:leading-[21px] text-[#90A3BF] font-plusJakarta">
             70L
           </div>
         </div>
-        <div className="w-[76px] h-[24px] flex justify-center items-center gap-1">
+        <div className="w-[60px] h-[14px] sm:w-[76px] sm:h-[24px] flex justify-center items-center gap-1">
           <svg
             width="24"
             height="24"
@@ -77,12 +77,13 @@ const CarCards4 = () => {
             <rect x="3" y="11" width="4" height="2" fill="#90A3BF" />
           </svg>
 
-          <div className="w-[48px] h-[24] font-medium text-[14px] leading-[21px] text-[#90A3BF] font-plusJakarta">
+          <div className="sm:w-[48px] sm:h-[24] font-medium text-[12px] sm:text-[14px] leading-[15px] sm:leading-[21px] text-[#90A3BF] font-plusJakarta">
             Manual
           </div>
         </div>
-        <div className="w-[90px] h-[24px] flex justify-center items-center gap-1">
+        <div className="w-[70px] h-[14px] sm:w-[90px] sm:h-[24px] flex justify-center items-center gap-1">
           <svg
+            className="w-[14px] h-[14px] sm:w-[24px] sm:h-[24px]"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -107,30 +108,29 @@ const CarCards4 = () => {
             />
           </svg>
 
-          <div className="w-[60px] h-[24] font-medium text-[14px] leading-[21px] text-[#90A3BF] font-plusJakarta">
-            6 People
+          <div className="w-[52px] h-[14px] sm:w-[60px] sm:h-[24] font-medium text-[12px] sm:text-[14px] leading-[15px] sm:leading-[21px] text-[#90A3BF] font-plusJakarta">
+            4 People
           </div>
         </div>
       </div>
-      <div className="w-[116px] h-[44px] pt-[70px] flex justify-between items-center gap-8 ">
-        <div className="font-bold text-[20px] font-plusJakarta">
-          $72.00/
-          <span className="font-bold text-[14px] font-plusJakarta text-[#90A3BF]">
+      <div className="w-[92px] h-[36px] sm:w-[116px] sm:h-[44px] pt-[35px] sm:pt-[80px] flex justify-between items-center px-5 sm:px-0 gap-4 sm:gap-8 ">
+        <div className="font-bold text-[16px] sm:text-[20px] font-plusJakarta">
+          $76.00/
+          <span className="font-bold text-[12px] sm:text-[14px] font-plusJakarta text-[#90A3BF]">
             day
           </span>
+          <p className="font-bold text-[12px] sm:text-[14px] line-through font-plusJakarta text-[#90A3BF] ">
+            $80.00
+            </p>
         </div>
-
         <div>
-          <Button className="w-[116px] h-[44px] px-[20px] rounded-[4px] bg-[#3563E9] text-white font-plusJakarta text-[16px] leading-[24px] text-center">
+          <Button className="w-[100px] h-[36px] sm:w-[116px] sm:h-[44px] px-[20px] rounded-[4px] bg-[#3563E9] text-white font-plusJakarta text-[12px] sm:text-[16px] leading-[24px] text-center">
             Rent Now
           </Button>
         </div>
       </div>
-      <p className="font-bold text-[14px] line-through font-plusJakarta text-[#90A3BF] mt-3 ">
-        $80.00
-      </p>
     </div>
   );
 };
 
-export default CarCards4;
+export default CarCard4;

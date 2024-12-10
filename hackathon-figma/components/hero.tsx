@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Pickswitchdrop from "./pickswitchdrop";
-import PopularCar from "./popularCar";
+
 
 function Hero() {
   return (
-    <main className="bg-[#F6F7F9]  px-[24px] sm:pt-[32px] sm:px-[64px]">
-      <div className="flex sm:gap-[32px]">
-        <div className="w-[327px] h-[232px] sm:py-2 sm:w-[640px] sm:h-[360px] rounded-[10px] bg-[#54A6FF] -mt-[100px] sm:-mt-0">
+    <main className="bg-[#F6F7F9]  px-[24px] sm:pt-[32px] sm:px-[30px] w-full">
+      <div className="flex sm:gap-[22px]">
+        <div className="w-[327px] h-[232px] sm:py-2 sm:w-[160px] sm:h-[180px] md:w-[320px] md:h-[360px] lg:w-[640px] lg:h-[360px] rounded-[10px] bg-[#54A6FF] -mt-[100px] sm:-mt-0">
           <div className="w-[240px] h-[70px] py-[16px] px-[16px] sm:w-[284px] sm:h-[224px] sm:pt-[24px] sm:pl-[24px] flex flex-col items-start gap-[12px] sm:gap-[16px]">
             <p className=" font-plusJakarta w-[240px] h-[20px] sm:w-[272px] sm:h-[96px] text-[16px] sm:text-[32px] font-semibold leading-[24px] sm:leading-[48px] tracking-[-0.03em] text-left text-[#FFFFFF]">
               The Best Platform for Car Rental
@@ -18,7 +17,9 @@ function Hero() {
             </p>
             <div>
               <Button className="font-plusJakarta w-[128px] h-[44px] p-[20px]  sm:w-[120px] sm:h-[44px] px-[20px] sm:py-0  rounded-[4px] bg-[#3563E9] text-white inline-flex items-center justify-center">
-                <p className="sm:w-[80px] sm:h-[24px] s:h-text-[12px] sm:text-[16px] font-semibold ">Rental Car</p>
+                <p className="sm:w-[80px] sm:h-[24px] s:h-text-[12px] sm:text-[16px] font-semibold ">
+                  Rental Car
+                </p>
               </Button>
             </div>
           </div>
@@ -43,8 +44,10 @@ function Hero() {
               facilities.
             </p>
             <Button className="font-plusJakarta w-[128px] h-[44px] p-[20px]  sm:w-[120px] sm:h-[44px] sm:py-0  rounded-[4px] bg-[#54A6FF] text-white inline-flex items-center justify-center">
-                <p className="sm:w-[80px] sm:h-[24px] s:h-text-[12px] sm:text-[16px] font-semibold ">Rental Car</p>
-              </Button>
+              <p className="sm:w-[80px] sm:h-[24px] s:h-text-[12px] sm:text-[16px] font-semibold ">
+                Rental Car
+              </p>
+            </Button>
           </div>
           <Image
             className="ml-[180px] -mt-[90px]"
@@ -56,8 +59,9 @@ function Hero() {
           />
         </div>
       </div>
-      <Pickswitchdrop />
+      {/* <Pickswitchdrop />
       <PopularCar />
+      <RecommendationCar/> */}
     </main>
   );
 }

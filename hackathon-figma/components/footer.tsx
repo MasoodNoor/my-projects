@@ -7,21 +7,21 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 function Footer() {
   return (
     <div>
-      <div className="w-full h-[480px] bg-white flex justify-between pt-[80px] px-[60px] ">
-        <div className="w-[292px] h-[108px] flex flex-col gap-[16px]">
-          <div
-            className={`${plusJakartaSans.className} w-[148px] h-[44px]  text-[32px] font-bold leading-[48px] tracking-[-0.03em] text-left text-[#3563E9]`}
+      <div className="w-auto sm:h-[480px] bg-white sm:flex justify-between pt-[80px] px-[30px] ">
+        <div className="w-[150px] pb-[150px] sm:w-[292px] h-[92px] sm:h-[108px] flex flex-col gap-[16px] ">
+          <p
+            className={`${plusJakartaSans.className} w-[108px] sm:w-[148px] h-[28px] sm:h-[44px] text-[24px] sm:text-[32px] font-bold leading-[36px] sm:leading-[48px] tracking-[-0.03em] text-left text-[#3563E9]`}
           >
             MORENT
-          </div>
-          <div
-            className={`${plusJakartaSans.className} w-[292px] h-[48px] text-[16px] font-medium leading-[24px] tracking-[-0.02em]  text-[#13131399]`}
+          </p>
+          <p
+            className={`${plusJakartaSans.className} w-[250px] sm:w-[292px] h-[48px] text-[14px] font-medium leading-[24px] tracking-[-0.02em]  text-[#13131399] pb-8`}
           >
             Our vision is to provide convenience and help increase your sales
             business.
-          </div>
+          </p>
         </div>
-        <div className=" h-[244px] flex gap-[60px]">
+        <div className="w-auto h-auto grid grid-cols-2 sm:flex sm:gap-[60px] pb-8">
           <div className="w-[152px] h-[244px] flex flex-col gap-[24px]">
             <p
               className={`${plusJakartaSans.className} w-[152px] h-[32px] text-[20px] font-semibold leading-[30px] tracking-[-0.02em]  text-[#1A202C]`}
@@ -69,14 +69,14 @@ function Footer() {
           </div>
         </div>
       </div>
-      <hr className="w-[92%] border border-[#13131329] -mt-[130px] mx-auto " />
+      <hr className="w-[92%] border border-[#13131329] sm:-mt-[130px] sm:mx-auto hidden sm:block" />
 
-      <div className="w-auto flex justify-between px-[55px] mt-[36px]">
-        <div
-          className={`${plusJakartaSans.className} w-[292px] h-[24px] text-[16px] font-semibold leading-[24px] tracking-[-0.02em] text-left text-[#1A202C]  `}
+      <div className="w-auto sm:flex justify-between sm:px-[55px] sm:mt-[36px] hidden ">
+        <p
+          className={`${plusJakartaSans.className} h-[24px] text-[16px] font-semibold leading-[24px] tracking-[-0.02em] text-left text-[#1A202C]  `}
         >
           ©2022 MORENT. All rights reserved
-        </div>
+        </p>
         <div className="w-auto">
           <div
             className={`${plusJakartaSans.className} w-[292px] h-[24px] text-[16px] font-semibold leading-[24px] tracking-[-0.02em] text-right text-[#1A202C] flex justify-between`}
@@ -85,6 +85,13 @@ function Footer() {
             <span className="block">Terms & Condition</span>
           </div>
         </div>
+      </div>
+      <div className="w-auto flex font-plusJakarta justify-between items-center px-8 sm:hidden ">
+        <p>Privacy & Policy</p>
+        <p>Terms & Condition</p>
+      </div>
+      <div className="w-auto flex justify-start items-center px-8 py-8 sm:hidden ">
+        <p>©2022 MORENT. All rights reserved</p>
       </div>
     </div>
   );

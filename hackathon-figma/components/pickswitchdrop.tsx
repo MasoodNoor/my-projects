@@ -8,7 +8,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 function Pickswitchdrop() {
   return (
-    <main className="flex flex-col sm:flex-row justify-center items-center sm:items-center sm:justify-around py-[32px]">
+    <main className="flex flex-col sm:gap-4 sm:flex-row justify-center items-center sm:items-center sm:justify-around py-[32px]">
       <div className="w-[327px] h-[120px] sm:w-[582px] sm:h-[132px] rounded-[10px] sm:rounded-[10px] sm:pt-[32px] sm:px-[48px] bg-white -ml-6 sm:-ml-0">
         <div className="w-[285px] h-[88px] p-[16px] sm:p-[0]">
           <div className="w-[92px] h-[25px] flex flex-row  gap-2 pb-3 ">
