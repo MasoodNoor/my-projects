@@ -1,14 +1,8 @@
-import { Plus_Jakarta_Sans } from "next/font/google";
 import CarCard from "./carCards";
 import CarCards2 from "./carCards2";
 import CarCards3 from "./carCards3";
 import CarCards4 from "./carCards4";
 import { Button } from "./ui/button";
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["600"], // Include the weight you need
-});
 
 function RecommendationCar() {
   return (
