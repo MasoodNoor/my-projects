@@ -11,12 +11,12 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 function PopularCar() {
   return (
-    <main className="w-[327px] h-[286px] sm:w-full sm:h-[452px]">
+    <main className="w-full px-8 py-6">
       <div className="">
         <div className="flex justify-between items-center">
           <div className="w-[327px] h-[20px] sm:h-[44px] sm:w-[132px]">
             <p
-              className={`${plusJakartaSans.className}  h-[24px]  text-[16px] font-medium leading-[20px] tracking-[-0.03em] text-left text-[#90A3BF] py-2`}
+              className={`${plusJakartaSans.className}  h-[24px]  text-[16px] font-medium leading-[20px] tracking-[-0.03em] text-left text-[#90A3BF]`}
             >
               Popular Car
             </p>
@@ -30,10 +30,10 @@ function PopularCar() {
           </div>
         </div>
         <div className="flex justify-center items-center sm:hidden overflow-hidden">
-          <CarCard />
+          <CarCards2 />
         </div>
 
-        <div className="sm:grid sm:grid-cols-4 sm:gap-x-7  hidden">
+        <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 sm:gap-x-6 sm:gap-y-6  w-[100%]  hidden">
           <CarCard />
           <CarCards2 />
           <CarCards3 />

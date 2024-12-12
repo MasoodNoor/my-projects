@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 const CarCard = () => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden w-[240px] h-[286px] sm:w-[304px] sm:h-[388px] p-[2px] sm:p-[24px]">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden px-8 py-6">
       <div className=" flex justify-between items-center">
         <h3 className="text-xl font-bold leading-[30px] font-plusJakarta">
           Koenigsegg
@@ -27,7 +27,7 @@ const CarCard = () => {
       </div>
       <div>
         <Image
-          className="pt-3"
+          className="pt-6"
           src="/car-images/carimg-1.png"
           alt="Koenigsegg Sport"
           width={304}
@@ -36,8 +36,8 @@ const CarCard = () => {
         <div className="shadow-box"></div>
       </div>
 
-      <div className="w-[204px] h-[14px]  sm:w-[256px] sm:h-[24px] pt-[25px] pb-[8px] sm:pt-[50px] flex items-center justify-between">
-        <div className="w-[42px] h-[14px] sm:w-[58px] sm:h-[24px] flex justify-center items-center gap-1">
+      <div className="pt-[40px] flex items-center justify-between">
+        <div className="flex justify-center items-center gap-1">
           <svg
             width="24"
             height="24"
@@ -108,12 +108,12 @@ const CarCard = () => {
             />
           </svg>
 
-          <div className="w-[52px] h-[14px] sm:w-[60px] sm:h-[24] font-medium text-[12px] sm:text-[14px] leading-[15px] sm:leading-[21px] text-[#90A3BF] font-plusJakarta">
+          <div className=" font-medium text-[12px] sm:text-[14px] leading-[15px] sm:leading-[21px] text-[#90A3BF] font-plusJakarta">
             2 People
           </div>
         </div>
       </div>
-      <div className="w-[92px] h-[36px] sm:w-[116px] sm:h-[44px] pt-[35px] sm:pt-[70px] flex justify-between items-center gap-4 sm:gap-8 ">
+      <div className="pt-[35px] sm:pt-[70px] flex justify-between items-center gap-4 sm:gap-8 ">
         <div className="font-bold text-[16px] sm:text-[20px] font-plusJakarta">
           $99.00/
           <span className="font-bold text-[12px] sm:text-[14px] font-plusJakarta text-[#90A3BF]">
@@ -121,7 +121,7 @@ const CarCard = () => {
           </span>
         </div>
         <div>
-          <Button className="w-[100px] h-[36px] sm:w-[116px] sm:h-[44px] px-[20px] rounded-[4px] bg-[#3563E9] text-white font-plusJakarta text-[12px] sm:text-[16px] leading-[24px] text-center">
+          <Button className=" px-[20px] rounded-[4px] bg-[#3563E9] text-white font-plusJakarta text-[12px] sm:text-[16px] leading-[24px] text-center">
             Rent Now
           </Button>
         </div>

@@ -1,24 +1,16 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-const CarCard2 = () => {
+const CarCard = () => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden w-[240px] h-[286px] sm:w-[304px] sm:h-[388px] p-[20px] sm:p-[24px]">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden px-8 py-6">
       <div className=" flex justify-between items-center">
         <h3 className="text-xl font-bold leading-[30px] font-plusJakarta">
-          Nissan GT - R
+        Nissan GT - R
         </h3>
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
-            fill="none"
-          />
-        </svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.62 20.8096C12.28 20.9296 11.72 20.9296 11.38 20.8096C8.48 19.8196 2 15.6896 2 8.68961C2 5.59961 4.49 3.09961 7.56 3.09961C9.38 3.09961 10.99 3.97961 12 5.33961C13.01 3.97961 14.63 3.09961 16.44 3.09961C19.51 3.09961 22 5.59961 22 8.68961C22 15.6896 15.52 19.8196 12.62 20.8096Z" stroke="#90A3BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
       </div>
       <div className="">
         <h3 className="text-[14px] font-bold leading-[30px] text-[#90A3BF] font-plusJakarta">
@@ -27,17 +19,17 @@ const CarCard2 = () => {
       </div>
       <div>
         <Image
-          className="pl-4 sm:pl-5 sm:pb-5 sm:w-[230px]"
+          className=""
           src="/car-images/carimg-2.png"
-          alt="Nissan GT - R"
-          width={180}
-          height={113}
+          alt="Koenigsegg Sport"
+          width={304}
+          height={213}
         />
-        {/* <div className="shadow-box"></div> */}
+        <div className="shadow-box"></div>
       </div>
 
-      <div className="w-[204px] h-[14px]  sm:w-[256px] sm:h-[24px] py-[15px] sm:py-0 sm:pt-80px] flex items-center justify-between">
-        <div className="w-[42px] h-[14px] sm:w-[58px] sm:h-[24px] flex justify-center items-center gap-1">
+      <div className="flex items-center justify-between">
+        <div className="flex justify-center items-center gap-1">
           <svg
             width="24"
             height="24"
@@ -50,7 +42,7 @@ const CarCard2 = () => {
               fill="#90A3BF"
             />
           </svg>
-          <div className="w-[24px] h-[18px] sm:w-[28px] sm:h-[24] font-medium text-[12px] sm:text-[14px] leading-[15px] sm:leading-[21px] text-[#90A3BF] font-plusJakarta">
+          <div className="w-[24px] h-[14px] sm:w-[28px] sm:h-[24] font-medium text-[12px] sm:text-[14px] leading-[15px] sm:leading-[21px] text-[#90A3BF] font-plusJakarta">
             80L
           </div>
         </div>
@@ -108,20 +100,20 @@ const CarCard2 = () => {
             />
           </svg>
 
-          <div className="w-[52px] h-[18px] sm:w-[60px] sm:h-[24] font-medium text-[12px] sm:text-[14px] leading-[15px] sm:leading-[21px] text-[#90A3BF] font-plusJakarta">
+          <div className="w-[52px] h-[14px] sm:w-[60px] sm:h-[24] font-medium text-[12px] sm:text-[14px] leading-[15px] sm:leading-[21px] text-[#90A3BF] font-plusJakarta">
             2 People
           </div>
         </div>
       </div>
-      <div className="w-[92px] h-[36px] sm:w-[116px] sm:h-[44px] sm:pt-[62px] flex justify-between items-center gap-4 sm:gap-8 ">
+      <div className="pt-[35px] sm:pt-[70px] flex justify-between items-center gap-4 sm:gap-8 ">
         <div className="font-bold text-[16px] sm:text-[20px] font-plusJakarta">
-          80.00/
+          $80.00/
           <span className="font-bold text-[12px] sm:text-[14px] font-plusJakarta text-[#90A3BF]">
             day
           </span>
           <p className="font-bold text-[12px] sm:text-[14px] line-through font-plusJakarta text-[#90A3BF] ">
-            $100.00
-          </p>
+            $80.00
+            </p>
         </div>
         <div>
           <Button className="w-[100px] h-[36px] sm:w-[116px] sm:h-[44px] px-[20px] rounded-[4px] bg-[#3563E9] text-white font-plusJakarta text-[12px] sm:text-[16px] leading-[24px] text-center">
@@ -133,4 +125,4 @@ const CarCard2 = () => {
   );
 };
 
-export default CarCard2;
+export default CarCard;
