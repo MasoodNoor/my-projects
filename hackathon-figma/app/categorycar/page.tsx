@@ -3,25 +3,23 @@ import CarCards2 from "@/components/carCards2";
 import CarCards3 from "@/components/carCards3";
 import CarCards4 from "@/components/carCards4";
 import MyCheckbox from "@/components/mycheckbox";
-import Pickswitchdrop from "@/components/pickswitchdrop";
+import SmallPickswitchdrop from "@/components/smpickswitchdrop";
 import { Button } from "@/components/ui/button";
 
 function page() {
   return (
-    <div className="flex  bg-[#F6F7F9] gap-8">
-      <aside className="sm:border border-r-[#F3F5F7] p-4 bg-white hidden sm:block sm:w-fit">
+    <div className="bg-[#F6F7F9] grid grid-cols-[4fr_8fr]  md:px-0">
+      <aside className="sm:border border-r-[#F3F5F7] p-4 bg-white hidden md:block sm:w-fit">
         <div>
           <MyCheckbox />
         </div>
       </aside>
 
-      <div className="-ml-4 py-8 w-auto h-auto">
-        <div>
-          <Pickswitchdrop
-          
-          />
+      <div className="py-8 -ml-4 grid grid-rows-1 place-items-center">
+        <div className="">
+          <SmallPickswitchdrop />
         </div>
-        <div className="w-auto h-auto grid grid-cols-1 sm:grid-cols-3 gap-y-4 sm:gap-x-3 sm:gap-y-6 pt-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 sm:gap-x-3 sm:gap-y-6 pt-5">
           <CarCard />
           <CarCards2 />
           <CarCards3 />
