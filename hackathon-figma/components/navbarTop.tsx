@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function NavbarTop() {
   return (
@@ -8,7 +9,7 @@ function NavbarTop() {
       {/* Logo */}
       <div className="col-span-1">
         <div className=" h-[28px] sm:h-[44px] text-[24px] sm:text-[32px] font-bold leading-[36px]  sm:leading-[48px] tracking-[-0.03em] text-left text-[#3563E9] font-plusJakarta ">
-          MORENT
+          <Link href="/">MORENT</Link>
         </div>
       </div>
 

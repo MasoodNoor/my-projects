@@ -101,6 +101,7 @@
 
 
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Link from "next/link";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -118,7 +119,7 @@ function Footer() {
             <h2 
               className={`${plusJakartaSans.className} text-2xl md:text-3xl font-bold text-[#3563E9]`}
             >
-              MORENT
+              <Link href="/">MORENT</Link>
             </h2>
             <p 
               className="text-sm text-[#90A3BF] max-w-xs"

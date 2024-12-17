@@ -8,47 +8,76 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import CarCard from "./carCards";
-import CarCards2 from "./carCards2";
-import CarCards3 from "./carCards3";
-import CarCards4 from "./carCards4";
+import CarCard from "./carCard";
+
+
 
 export function CarouselDemo() {
   return (
-    <Carousel className="w-full max-w-xs ">
+    <Carousel className="">
       <CarouselContent>
         <CarouselItem>
           <div className="">
             <Card>
               <CardContent className="flex items-center justify-center bg-[#F6F7F9] ">
-                <CarCard />
+                <CarCard
+                  name="Koenigsegg"
+                  type="Sport"
+                  fuel="90L"
+                  capacity="2 People"
+                  price="$99.00"
+                  imageSrc="/car-images/carimg-1.png"
+                />
               </CardContent>
             </Card>
           </div>
-              </CarouselItem>
-              <CarouselItem>
+        </CarouselItem>
+        <CarouselItem>
           <div className="">
             <Card>
               <CardContent className="flex items-center justify-center bg-[#F6F7F9]    ">
-                <CarCards2 />
+                <CarCard
+                  name="Nissan GT - R"
+                  type="Sport"
+                  fuel="80L"
+                  capacity="2 People"
+                  price="$80.00"
+                  imageSrc="/car-images/carimg-2.png"
+                  discountPrice="$100.00"
+                />
               </CardContent>
             </Card>
           </div>
-              </CarouselItem>
-              <CarouselItem>
+        </CarouselItem>
+        <CarouselItem>
           <div className="">
             <Card>
               <CardContent className="flex items-center justify-center bg-[#F6F7F9] ">
-                <CarCards3 />
+                <CarCard
+                  name="Rolls - Royce"
+                  type="Sedan"
+                  fuel="70L"
+                  capacity="4 People"
+                  price="$96.00"
+                  imageSrc="/car-images/carimg-3.png"
+                />
               </CardContent>
             </Card>
           </div>
-              </CarouselItem>
-              <CarouselItem>
+        </CarouselItem>
+        <CarouselItem>
           <div className="">
             <Card>
               <CardContent className="flex items-center justify-center bg-[#F6F7F9] ">
-                <CarCards4 />
+                <CarCard
+                  name="Nissan GT - R"
+                  type="Sport"
+                  fuel="80L"
+                  capacity="2 People"
+                  price="$80.00"
+                  imageSrc="/car-images/carimg-2.png"
+                  discountPrice="$100.00"
+                />
               </CardContent>
             </Card>
           </div>

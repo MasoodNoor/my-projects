@@ -7,8 +7,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 function Pickswitchdrop() {
   return (
-    <main className=" grid md:grid-cols-[5fr_2fr_5fr] place-items-center px-4 sm:px-6">
-      <div className="rounded-lg py-6 px-8 sm:py-8 md:px-12 bg-white sm:w-[582px] ">
+    <main className="px-8 grid md:grid-cols-[5fr_2fr_5fr] place-items-center">
+      <div className="rounded-lg py-6 px-4 sm:py-8 md:px-8 bg-white sm:w-[582px] ">
         <div className="flex items-center gap-2 pb-3">
           <div className="w-4 h-4 p-1 rounded-full bg-[#3563E94D] flex items-center justify-center">
             <div className="w-2 h-2 rounded-full bg-[#3563E9]"></div>
@@ -155,7 +155,7 @@ function Pickswitchdrop() {
           </svg>
         </button>
       </div>
-      <div className="rounded-lg py-6 px-8 sm:py-8 md:px-12 bg-white  flex flex-col justify-start items-start sm:w-[582px]">
+      <div className="rounded-lg py-6 px-4 sm:py-8 md:px-8 bg-white sm:w-[582px]">
         <div className="flex items-center gap-2 pb-3">
           <div className="w-4 h-4 p-1 rounded-full bg-[#3563E94D] flex items-center justify-center">
             <div className="w-2 h-2 rounded-full bg-[#3563E9]"></div>

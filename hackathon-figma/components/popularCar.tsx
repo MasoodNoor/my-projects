@@ -1,9 +1,8 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
-import CarCard from "./carCards";
-import CarCards2 from "./carCards2";
-import CarCards3 from "./carCards3";
-import CarCards4 from "./carCards4";
+import CarCard from "./carCard";
+
 import { CarouselDemo } from "./myCarousel";
+import Link from "next/link";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -26,20 +25,51 @@ function PopularCar() {
             <p
               className={`${plusJakartaSans.className}  h-[24px]  text-[16px] font-medium leading-[20px] tracking-[-0.03em] text-left text-[#3563E9]`}
             >
-              View All
+              <Link href="/categorycar">View All</Link>
             </p>
           </div>
         </div>
-        <div className="px-4 w-full sm:hidden">
-          
-          <CarouselDemo/>
+        <div className="px-4 sm:hidden">
+          <CarouselDemo />
         </div>
 
         <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 sm:gap-x-6 sm:gap-y-6  w-[100%]  hidden">
-          <CarCard />
-          <CarCards2 />
-          <CarCards3 />
-          <CarCards4 />
+          <CarCard
+            name="Koenigsegg"
+            type="Sport"
+            fuel="90L"
+            capacity="2 People"
+            price="$99.00"
+            imageSrc="/car-images/carimg-1.png"
+            isFavorited={true}
+          />
+          <CarCard
+            name="Nissan GT - R"
+            type="Sport"
+            fuel="80L"
+            capacity="2 People"
+            price="$80.00"
+            imageSrc="/car-images/carimg-2.png"
+            discountPrice="$100.00"
+          />
+          <CarCard
+            name="Rolls - Royce"
+            type="Sedan"
+            fuel="70L"
+            capacity="4 People"
+            price="$96.00"
+            imageSrc="/car-images/carimg-3.png"
+            isFavorited={true}
+          />
+          <CarCard
+            name="Nissan GT - R"
+            type="Sport"
+            fuel="80L"
+            capacity="2 People"
+            price="$80.00"
+            imageSrc="/car-images/carimg-2.png"
+            discountPrice="$100.00"
+          />
         </div>
       </div>
     </main>

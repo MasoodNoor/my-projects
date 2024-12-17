@@ -5,7 +5,7 @@ import RecommendationCar from "@/components/recommendationcar";
 
 export default function Home() {
   return (
-    <main className="bg-[#F6F7F9] grid grid-cols-1 gap-y-8">
+    <main className="bg-[#F6F7F9] grid grid-cols-1 gap-y-4">
       <Hero />
       <Pickswitchdrop />
       <PopularCar />

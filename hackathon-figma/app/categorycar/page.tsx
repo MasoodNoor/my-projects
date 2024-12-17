@@ -1,7 +1,4 @@
-import CarCard from "@/components/carCards";
-import CarCards2 from "@/components/carCards2";
-import CarCards3 from "@/components/carCards3";
-import CarCards4 from "@/components/carCards4";
+import RecommandCar from "../../components/reCars";
 import MyCheckbox from "@/components/mycheckbox";
 import SmallPickswitchdrop from "@/components/smpickswitchdrop";
 import { Button } from "@/components/ui/button";
@@ -20,17 +17,90 @@ function page() {
           <SmallPickswitchdrop />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 sm:gap-x-3 sm:gap-y-6 pt-5">
-          <CarCard />
-          <CarCards2 />
-          <CarCards3 />
-          <CarCards4 />
-          <CarCards2 />
-          <CarCards4 />
-          <CarCard />
-          <CarCards3 />
-          <CarCards4 />
+        <RecommandCar
+                  name="Koenigsegg"
+                  type="Sport"
+                  fuel="90L"
+                  capacity="2 People"
+                  price="$99.00"
+            imageSrc="/car-images/carimg-1.png"
+            isFavorited={true}
+          />
+          <RecommandCar
+                  name="Nissan GT - R"
+                  type="Sport"
+                  fuel="80L"
+                  capacity="2 People"
+                  price="$80.00"
+            imageSrc="/car-images/carimg-2.png"
+            discountPrice="$100.00"
+          />
+          <RecommandCar
+                  name="Rolls - Royce"
+                  type="Sedan"
+                  fuel="70L"
+                  capacity="4 People"
+                  price="$96.00"
+            imageSrc="/car-images/carimg-3.png"
+            isFavorited={true}
+            
+          />
+          <RecommandCar
+            name="All New Rush"
+            type="SUV"
+            fuel="70L"
+            capacity="6 People"
+            price="$72.00"
+            imageSrc="/car-images/carimg-4.png"
+            discountPrice="$80.00"
+          />
+          <RecommandCar
+            name="CR  - V"
+            type="SUV"
+            fuel="80L"
+            capacity="6 People"
+            price="$80.00"
+            imageSrc="/car-images/carimg-5.png"
+            isFavorited={true}
+          />
+          <RecommandCar
+            name="All New Terios"
+            type="SUV"
+            fuel="90L"
+            capacity="6 People"
+            price="$74.00"
+            imageSrc="/car-images/carimg-6.png"
+          />
+          <RecommandCar
+            name="CR  - V"
+            type="SUV"
+            fuel="80L"
+            capacity="6 People"
+            price="$80.00"
+            imageSrc="/car-images/carimg-8.png"
+            isFavorited={true}
+          />
+          <RecommandCar
+            name="MG ZX Exclusice"
+            type="Hatchback"
+            fuel="70L"
+            capacity="4 People"
+            price="$76.00"
+            imageSrc="/car-images/carimg-9.png"
+            discountPrice="$80.00"
+            isFavorited={true}
+          />
+          <RecommandCar
+            name="New MG ZS"
+            type="SUV"
+            fuel="80L"
+            capacity="6 People"
+            price="$80.00"
+            imageSrc="/car-images/carimg-7.png"
+          />
+          
         </div>
-        <div className="sm:w-[100%] sm:h-[44px] flex items-center justify-between pt-8 py-10 sm:py-20">
+        <div className="w-full flex items-center justify-between px-8 pt-8 py-10 sm:py-20">
           <div></div>
           <Button className="  bg-[#3563E9] `sm:px-[20px] sm:rounded-[4px] inline-flex items-center justify-center ">
             <p className="inline-flex items-center justify-center  text-[#FFFFFF] font-plusJakarta font-semibold text-[14px] sm:text-[16px] leading-4 text-center">
