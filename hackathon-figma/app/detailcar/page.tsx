@@ -4,8 +4,6 @@ import CustomerReview from "@/components/customerReview";
 import DetailComponent from "@/components/detailComponent";
 import { CarouselDemo } from "@/components/myCarousel";
 import MyCheckbox from "@/components/mycheckbox";
-
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 function DetailCar() {
@@ -52,8 +50,8 @@ function DetailCar() {
             </div>
           </div>
           <div className="w-[35%] sm:hidden">
-          <CarouselDemo />
-        </div>
+            <CarouselDemo />
+          </div>
           <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-x-4 place-items-center py-4 px-3 hidden">
             <CarCard
               name="Koenigsegg"
@@ -98,8 +96,8 @@ function DetailCar() {
             </div>
           </div>
           <div className="w-[35%] sm:hidden">
-          <CarouselDemo />
-        </div>
+            <CarouselDemo />
+          </div>
           <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-x-4 place-items-center py-4 px-3 hidden">
             <CarCard
               name="Koenigsegg"

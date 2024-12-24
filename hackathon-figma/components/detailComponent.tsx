@@ -22,7 +22,6 @@ const DetailComponent = ({
   capacity,
   price,
   oldPrice,
-  isFavorited,
 }: DetailCarProps) => {
   return (
     <div>

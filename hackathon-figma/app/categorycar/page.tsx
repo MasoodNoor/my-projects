@@ -34,7 +34,7 @@ function page() {
                   capacity="2 People"
                   price="$80.00"
             imageSrc="/car-images/carimg-2.png"
-            discountPrice="$100.00"
+            oldPrice="$100.00"
           />
           <RecommandCar
                   name="Rolls - Royce"
@@ -53,7 +53,7 @@ function page() {
             capacity="6 People"
             price="$72.00"
             imageSrc="/car-images/carimg-4.png"
-            discountPrice="$80.00"
+            oldPrice="$80.00"
           />
           <RecommandCar
             name="CR  - V"
@@ -88,7 +88,7 @@ function page() {
             capacity="4 People"
             price="$76.00"
             imageSrc="/car-images/carimg-9.png"
-            discountPrice="$80.00"
+            oldPrice="$80.00"
             isFavorited={true}
           />
           <RecommandCar
