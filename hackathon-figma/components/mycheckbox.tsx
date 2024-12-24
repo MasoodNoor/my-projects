@@ -3,7 +3,7 @@ import { Slider } from "@nextui-org/slider";
 
 export default function MyCheckbox() {
   return (
-    <div>
+    <div className="w-fit">
       <div className=" flex flex-col sm:gap-[20px] sm:pl-[15px]">
         <p className=" sm:pb-[28px] font-plusJakarta font-semibold text-[12] leading-[16px] text-[#90A3BF] ">
           TYPE
@@ -67,12 +67,12 @@ export default function MyCheckbox() {
             </p>
           </Checkbox>
         </div>
-        <div className=" flex flex-col sm:gap-[20px] ">
-          <p className=" sm:py-[28px] font-plusJakarta font-semibold text-[12] leading-[16px] text-[#90A3BF]  ">
+        <div className="">
+          <p className="sm:py-[28px] font-plusJakarta font-semibold text-[12] leading-[16px] text-[#90A3BF]  ">
             PRICE
           </p>
 
-          <div className="">
+          <div className="py-2">
             <Slider
               className=""
               defaultValue={40}
@@ -83,11 +83,11 @@ export default function MyCheckbox() {
                 base: "w-[296px] h-[12px]",
                 track: "bg-[#90A3BF]",
                 filler: "bg-[#3563E9] rounded-l-full",
-                thumb: "bg-white border-4 bg-[#3563E9] mt-[6px]",
+                thumb: "bg-white border-4 bg-[#3563E9] mt-[2px]",
               }}
             />
             <div>
-              <p className="h-[24px] font-semibold text-[20px] leading-[30px] text-[#596780]">
+              <p className="pt-2 h-[24px] font-semibold text-[20px] leading-[30px] text-[#596780]">
                 Max. $100.00
               </p>
             </div>

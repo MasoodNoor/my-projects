@@ -33,7 +33,7 @@ function PopularCar() {
           <CarouselDemo />
         </div>
 
-        <div className="sm:grid sm:grid-cols-2 md:grid-cols-4 sm:gap-x-6 sm:gap-y-6  w-[100%]  hidden">
+        <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-x-4 sm:gap-y-6 w-full hidden">
           <CarCard
             name="Koenigsegg"
             type="Sport"
@@ -50,7 +50,7 @@ function PopularCar() {
             capacity="2 People"
             price="$80.00"
             imageSrc="/car-images/carimg-2.png"
-            discountPrice="$100.00"
+            oldPrice="$100.00"
           />
           <CarCard
             name="Rolls - Royce"
@@ -68,7 +68,7 @@ function PopularCar() {
             capacity="2 People"
             price="$80.00"
             imageSrc="/car-images/carimg-2.png"
-            discountPrice="$100.00"
+            oldPrice="$100.00"
           />
         </div>
       </div>

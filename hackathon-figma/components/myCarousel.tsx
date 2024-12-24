@@ -43,7 +43,7 @@ export function CarouselDemo() {
                   capacity="2 People"
                   price="$80.00"
                   imageSrc="/car-images/carimg-2.png"
-                  discountPrice="$100.00"
+                  oldPrice="$100.00"
                 />
               </CardContent>
             </Card>
@@ -76,7 +76,7 @@ export function CarouselDemo() {
                   capacity="2 People"
                   price="$80.00"
                   imageSrc="/car-images/carimg-2.png"
-                  discountPrice="$100.00"
+                  oldPrice="$100.00"
                 />
               </CardContent>
             </Card>

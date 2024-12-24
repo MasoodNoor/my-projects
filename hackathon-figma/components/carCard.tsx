@@ -9,7 +9,7 @@ interface CarCardProps {
   price: string;
   imageSrc: string;
   imageWidth?: number;
-  discountPrice?: string;
+  oldPrice?: string;
   isFavorited?: boolean;
 }
 
@@ -21,11 +21,11 @@ const CarCard = ({
   fuel,
   capacity,
   price,
-  discountPrice,
+  oldPrice,
   isFavorited,
 }: CarCardProps) => {
   return (
-    <div className="bg-white rounded-[10px] shadow-md overflow-hidden p-4 sm:p-6 w-[240px] h-full sm:w-[304px] sm:h-[388px]">
+    <div className="bg-white rounded-[10px] shadow-md overflow-hidden p-4  w-full h-full ">
       <div className=" flex justify-between items-center">
         <h3 className="text-base font-semibold sm:text-xl sm:bold font-plusJakarta">
           {name}
@@ -50,7 +50,7 @@ const CarCard = ({
           {type}
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-y-4 pb-10 sm:pt-8 ">
+      <div className="grid grid-cols-1 gap-y-4 place-items-center pb-10 sm:pt-8 ">
         <div className="h-[140px] flex items-end">
           <Image
             className={`${imageWidth} sm:w-[300px]`}
@@ -62,7 +62,7 @@ const CarCard = ({
           <div className="shadow-box absolute"></div>
         </div>
 
-        <div className="flex justify-around sm:justify-between sm:items-center">
+        <div className="flex justify-around sm:justify-between sm:items-center w-full ">
           <div className="flex justify-start items-center gap-1">
             <svg
               width="14"
@@ -143,20 +143,20 @@ const CarCard = ({
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center gap-4 sm:gap-8 ">
+      <div className="flex justify-between items-center gap-2  w-full">
         <div className="font-base font-bold font-plusJakarta">
-          {price}
+          {price}/
           <span className="font-bold text-[12px] sm:text-[14px] font-plusJakarta text-[#90A3BF]">
             &nbsp;day
           </span>
           <span>
             <p className="font-bold text-[12px] sm:text-[14px] line-through font-plusJakarta text-[#90A3BF] ">
-              {discountPrice}
+              {oldPrice}
             </p>
           </span>
         </div>
         <div>
-          <Button className=" px-[20px] rounded-[4px] bg-[#3563E9] text-white font-plusJakarta text-[12px] sm:text-[16px] leading-[24px] text-center">
+          <Button className=" rounded-[4px] bg-[#3563E9] text-white font-plusJakarta text-[12px] sm:text-[16px] leading-[24px] text-center">
             Rent Now
           </Button>
         </div>

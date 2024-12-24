@@ -7,8 +7,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 function Pickswitchdrop() {
   return (
-    <main className="px-8 grid md:grid-cols-[5fr_2fr_5fr] place-items-center">
-      <div className="rounded-lg py-6 px-4 sm:py-8 md:px-8 bg-white sm:w-[582px] ">
+    <main className="p-8 grid lg:grid-cols-[5fr_2fr_5fr] place-items-center relative ">
+      <div className="rounded-lg py-6 px-4 sm:py-8 md:px-4 bg-white w-full ">
         <div className="flex items-center gap-2 pb-3">
           <div className="w-4 h-4 p-1 rounded-full bg-[#3563E94D] flex items-center justify-center">
             <div className="w-2 h-2 rounded-full bg-[#3563E9]"></div>
@@ -19,7 +19,7 @@ function Pickswitchdrop() {
             Pick - Up
           </p>
         </div>
-        <div className="flex flex-row sm:justify-between gap-4 w-full">
+        <div className="flex flex-row justify-between gap-4 w-full">
           {/* Locations Section */}
           <div className="flex flex-col">
             <p
@@ -155,7 +155,7 @@ function Pickswitchdrop() {
           </svg>
         </button>
       </div>
-      <div className="rounded-lg py-6 px-4 sm:py-8 md:px-8 bg-white sm:w-[582px]">
+      <div className="rounded-lg py-6 px-4 sm:py-8 md:px-4 bg-white w-full">
         <div className="flex items-center gap-2 pb-3">
           <div className="w-4 h-4 p-1 rounded-full bg-[#3563E94D] flex items-center justify-center">
             <div className="w-2 h-2 rounded-full bg-[#3563E9]"></div>
@@ -166,7 +166,7 @@ function Pickswitchdrop() {
             Drop - Off
           </p>
         </div>
-        <div className="flex flex-row sm:justify-between gap-4 w-full">
+        <div className="flex flex-row justify-between gap-4 w-full">
           {/* Locations Section */}
           <div className="flex flex-col">
             <p

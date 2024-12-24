@@ -7,14 +7,14 @@ import { Button } from "./ui/button";
 function RecommendationCar() {
   return (
     <main>
-      <div className="w-full h-full sm:h-full  sm:py-[10px] px-8">
+      <div className="w-full h-full  sm:py-[10px] px-8">
         <div className="w-auto h-auto pb-[20px] pt-[31px] flex justify-start items-start">
           <p className=" sm:h-[44px] font-plusJakarta font-semibold text-left text-[16px] leading-4 text-[#90A3BF]">
             Recommendation Car
           </p>
         </div>
 
-        <div className="w-auto h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-4 sm:gap-x-6 sm:gap-y-6">
+        <div className="w-auto h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4 sm:gap-x-6 sm:gap-y-6 px-2">
           <RecommandCar
             name="All New Rush"
             type="SUV"
@@ -22,7 +22,7 @@ function RecommendationCar() {
             capacity="6 People"
             price="$72.00"
             imageSrc="/car-images/carimg-4.png"
-            discountPrice="$80.00"
+            oldPrice="$80.00"
           />
           <RecommandCar
             name="CR  - V"
@@ -57,7 +57,7 @@ function RecommendationCar() {
             capacity="4 People"
             price="$76.00"
             imageSrc="/car-images/carimg-9.png"
-            discountPrice="$80.00"
+            oldPrice="$80.00"
             isFavorited={true}
           />
           <RecommandCar
@@ -75,7 +75,7 @@ function RecommendationCar() {
             capacity="4 People"
             price="$76.00"
             imageSrc="/car-images/carimg-9.png"
-            discountPrice="$80.00"
+            oldPrice="$80.00"
             isFavorited={true}
           />
           <RecommandCar

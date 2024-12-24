@@ -5,7 +5,7 @@ function NavbarTop() {
   return (
 
 
-    <div className="grid grid-cols-2 gap-3 items-center px-[24px] sm:px-[60px] py-8 md:py-[40px] md:grid-cols-[1fr_2fr_1fr] gap-y-7">
+    <div className="grid grid-cols-2 gap-3 items-center px-[24px]  py-8 md:py-[40px] md:grid-cols-[1fr_2fr_1fr] gap-y-7 w-full ">
       {/* Logo */}
       <div className="col-span-1">
         <div className=" h-[28px] sm:h-[44px] text-[24px] sm:text-[32px] font-bold leading-[36px]  sm:leading-[48px] tracking-[-0.03em] text-left text-[#3563E9] font-plusJakarta ">
@@ -14,8 +14,8 @@ function NavbarTop() {
       </div>
 
       {/* Search Bar */}
-      <div className="col-span-2 order-3 md:col-span-1 md:order-2 md:justify-self-center gap-4 flex justify-center ">
-        <button className="h-[48px]  sm:h-[44px] rounded-xl sm:rounded-[70px] border border-[#C3D4E966] bg-white flex justify-between items-center px-5 overflow-hidden sm:w-full md:w-[492px]">
+      <div className="col-span-2 order-3 md:col-span-1 md:order-2 md:justify-self-center gap-4 flex justify-center">
+        <button className="h-[48px]  sm:h-[44px] rounded-xl sm:rounded-[70px] border border-[#C3D4E966] bg-white flex justify-between items-center px-5 overflow-hidden w-full md:w-[492px] lg:w-">
           <div className="flex gap-6 pr-8">
             <svg
               className="w-[24px] h-[24px] text-[#596780]"
@@ -230,7 +230,7 @@ function NavbarTop() {
           alt="User Avatar"
           width={44}
           height={44}
-          className="w-[44px] h-[44px] rounded-full"
+          className="w-[44px] h-[44px] rounded-full min-w-10"
         />
       </div>
     </div>

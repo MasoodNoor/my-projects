@@ -1,22 +1,23 @@
 import RecommandCar from "../../components/reCars";
 import MyCheckbox from "@/components/mycheckbox";
-import SmallPickswitchdrop from "@/components/smpickswitchdrop";
+import Pickswitchdrop from "@/components/pickswitchdrop";
 import { Button } from "@/components/ui/button";
 
 function page() {
   return (
-    <div className="bg-[#F6F7F9] grid grid-cols-[4fr_8fr]  md:px-0">
-      <aside className="sm:border border-r-[#F3F5F7] p-4 bg-white hidden md:block sm:w-fit">
+    <div className="bg-[#F6F7F9] grid grid-cols-[2fr_10fr] overflow-auto">
+     
+      <aside className="md:border border-r-[#F3F5F7] p-4 bg-white hidden md:block">
         <div>
           <MyCheckbox />
         </div>
       </aside>
-
-      <div className="py-8 -ml-4 grid grid-rows-1 place-items-center">
-        <div className="">
-          <SmallPickswitchdrop />
+      <aside className="">
+        <div className="w-fit">
+        <Pickswitchdrop/>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 sm:gap-x-3 sm:gap-y-6 pt-5">
+        <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-y-4 sm:gap-x-3 sm:gap-y-6 px-8 w-full">
         <RecommandCar
                   name="Koenigsegg"
                   type="Sport"
@@ -100,7 +101,9 @@ function page() {
           />
           
         </div>
-        <div className="w-full flex items-center justify-between px-8 pt-8 py-10 sm:py-20">
+          
+        </div>
+        <div className="flex items-center justify-between px-8 py-10 relative">
           <div></div>
           <Button className="  bg-[#3563E9] `sm:px-[20px] sm:rounded-[4px] inline-flex items-center justify-center ">
             <p className="inline-flex items-center justify-center  text-[#FFFFFF] font-plusJakarta font-semibold text-[14px] sm:text-[16px] leading-4 text-center">
@@ -112,8 +115,17 @@ function page() {
               120 cars
             </p>
           </div>
+          </div>
+      </aside>
+
+      {/* <div className="">
+        <div className="">
+          <Pickswitchdrop/>
         </div>
-      </div>
+        
+        
+        </div>
+      </div> */}
     </div>
   );
 }
